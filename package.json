@@ -1,0 +1,23 @@
+{
+  "name": "Pokemon-Test",
+  "version": "1.0.0",
+  "description": "Pokemon Test for VK and FB",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.8"
+  },
+  "devDependencies": {
+    "phaser": "^2.6.1",
+    "tern": "^0.19.0"
+  }
+}
