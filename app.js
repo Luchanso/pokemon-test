@@ -635,7 +635,7 @@ VK.publicatePhoto = function(image) {
 
 function getWallUploadServer() {
   return new Promise(function(res, rej) {
-    VK.api("photos.getWallUploadServer", {test_mode: 1}, function (data) {
+    VK.api("photos.getWallUploadServer", {"test_mode": 1}, function (data) {
       res(data);
     });
   });
