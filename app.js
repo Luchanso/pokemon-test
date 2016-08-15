@@ -635,7 +635,7 @@ VK.publicatePhoto();
 function getWallUploadServer() {
   return new Promise(function(res, rej) {
     VK.api("photos.getWallUploadServer", {}, function (data) {
-      res(data.upload_url);
+      res(data);
     });
   });
 }
