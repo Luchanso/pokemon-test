@@ -32,6 +32,7 @@ gulp.task('js', function() {
   'src/preloader/**/*.js',
   'src/game/**/*.js',
   'src/calculate/**/*.js',
+  'src/vk/**/*.js',
   'src/app.js'
   ];
 

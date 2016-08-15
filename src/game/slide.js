@@ -25,13 +25,13 @@ Engine.Slide.prototype.show = function() {
 
   this.game.add.tween(this).to({
     alpha: 1
-  }, 250).start();
+  }, 150).start();
 }
 
 Engine.Slide.prototype.hide = function() {
   var tween = this.game.add.tween(this).to({
     alpha: 0
-  }, 250).start();
+  }, 150).start();
 
   tween.onComplete.add(function() {
     this.visible = false;

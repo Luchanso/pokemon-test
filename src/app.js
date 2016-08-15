@@ -1,4 +1,4 @@
-Engine.GAME_WIDTH = 1024;
+Engine.GAME_WIDTH = 1000;
 Engine.GAME_HEIGHT = 640;
 
 Engine.DEBUG = true;

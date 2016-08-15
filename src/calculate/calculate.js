@@ -166,6 +166,7 @@ Engine.Calculate.prototype = {
   },
 
   _shareData: function() {
+    var data = this.game.canvas.toDataURL();
     // TODO: make Share data
   },
 
