@@ -12,5 +12,7 @@ game.state.add('Boot', Engine.Boot);
 game.state.add('Preloader', Engine.Preloader);
 game.state.add('Game', Engine.Game);
 game.state.add('Calculate', Engine.Calculate);
+game.state.add('Gen', Engine.Generator); // TODO: temp
 
-game.state.start('Boot');
+// game.state.start('Boot');
+game.state.start('Gen');
