@@ -1,6 +1,6 @@
 Engine.GAME_WIDTH = 1000;
 Engine.GAME_HEIGHT = 640;
-
+Engine.APP_NAME = 'vk.com/app5587989';
 Engine.DEBUG = true;
 
 var game = new Phaser.Game(Engine.GAME_WIDTH, Engine.GAME_HEIGHT, Phaser.AUTO, 'game');
@@ -12,7 +12,6 @@ game.state.add('Boot', Engine.Boot);
 game.state.add('Preloader', Engine.Preloader);
 game.state.add('Game', Engine.Game);
 game.state.add('Calculate', Engine.Calculate);
-game.state.add('Gen', Engine.Generator); // TODO: temp
 
-// game.state.start('Boot');
-game.state.start('Gen');
+game.state.start('Boot');
+// game.state.start('Gen');

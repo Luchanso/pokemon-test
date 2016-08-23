@@ -34,7 +34,8 @@ gulp.task('js', function() {
   'src/calculate/**/*.js',
   'src/generator/**/*.js',
   'src/vk/**/*.js',
-  'src/app.js'
+  'src/app.js',
+  'src/pokemonDB.js'
   ];
 
   gulp.src(src)
