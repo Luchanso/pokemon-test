@@ -53,11 +53,6 @@ Engine.Preloader.prototype = {
 
     Engine.loader.start();
 
-    // // TODO: TEMP
-    // Engine.loader.onLoadComplete.add(function() {
-    //   this.state.start('Calculate');
-    // }, this);
-
     this.state.start('Game');
   },
 
