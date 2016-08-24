@@ -11,6 +11,14 @@ if (isVkEnv()) {
   }, '5.53');
 }
 
+VK.startPreroll = function() {
+  // TODO: Write this
+}
+
+VK.startAds = function() {
+  // TODO: Write this
+}
+
 VK.publicatePhoto = function(pokemonId) {
   var pokemonName = Engine.PokemonDB.pokemons[pokemonId - 1].identifier;
   VK.api('wall.post', {message: 'Тест на покемона: https://' + Engine.APP_NAME, attachments: Engine.data[pokemonId - 1].url});

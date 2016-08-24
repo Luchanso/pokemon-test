@@ -125,7 +125,11 @@ Engine.Calculate.prototype = {
   },
 
   _addAds: function() {
-    // TODO: make ADS function
+    if (this.game.rnd.pick([-1, 1]) === 1) {
+      VK.startPreroll();
+    } else {
+      VK.startAds();
+    }
   },
 
   _addBtns: function() {
