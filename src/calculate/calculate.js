@@ -166,8 +166,7 @@ Engine.Calculate.prototype = {
   },
 
   _shareData: function() {
-    var data = this.game.canvas.toDataURL();
-    // TODO: make Share data
+    VK.publicatePhoto(Engine.rndPokemon);
   },
 
   _repeatGame: function() {

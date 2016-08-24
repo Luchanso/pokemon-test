@@ -14,4 +14,3 @@ game.state.add('Game', Engine.Game);
 game.state.add('Calculate', Engine.Calculate);
 
 game.state.start('Boot');
-// game.state.start('Gen');

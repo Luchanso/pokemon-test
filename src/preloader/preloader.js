@@ -25,6 +25,7 @@ Engine.Preloader.prototype = {
     this._loadPokemons();
 
     this.load.text('pokemon.csv', 'assets/data/pokemon.csv');
+    this.load.text('data.json', 'assets/data/data.json');
 
     this.load.onFileComplete.add(this.fileComplete, this);
   },
@@ -47,14 +48,17 @@ Engine.Preloader.prototype = {
 
   create: function () {
     this._initPokemonDB();
+
+    Engine.data = JSON.parse(this.cache.getText('data.json'));
+
     Engine.loader.start();
 
-    // TODO: TEMP
-    Engine.loader.onLoadComplete.add(function() {
-      this.state.start('Calculate');
-    }, this);
+    // // TODO: TEMP
+    // Engine.loader.onLoadComplete.add(function() {
+    //   this.state.start('Calculate');
+    // }, this);
 
-    // this.state.start('Game');
+    this.state.start('Game');
   },
 
   _initStyle: function() {

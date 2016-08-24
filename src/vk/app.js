@@ -5,14 +5,15 @@ if (isVkEnv()) {
      * @type {Boolean}
      */
     VK.succesInit = true;
-    VK.publicatePhoto(pokemonId);
+    // VK.publicatePhoto(pokemonId);
   }, function() {
     VK.succesInit = false;
   }, '5.53');
 }
 
 VK.publicatePhoto = function(pokemonId) {
-
+  var pokemonName = Engine.PokemonDB.pokemons[pokemonId - 1].identifier;
+  VK.api('wall.post', {message: 'Тест на покемона: https://' + Engine.APP_NAME, attachments: Engine.data[pokemonId - 1].url});
 }
 
 function isVkEnv() {
