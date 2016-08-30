@@ -3,7 +3,7 @@ Engine.GAME_HEIGHT = 640;
 Engine.APP_NAME = 'vk.com/app5587989';
 
 Engine.DEBUG = false;
-Engine.ADS_IS_ACTIVE = true;
+Engine.ADS_IS_ACTIVE = false;
 
 var game = new Phaser.Game(Engine.GAME_WIDTH, Engine.GAME_HEIGHT, Phaser.AUTO, 'game');
 
