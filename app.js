@@ -746,7 +746,7 @@ if (isVkEnv()) {
 }
 
 VK.startPreroll = function() {
-  if (vk.adsIsShowing) {
+  if (VK.adsIsShowing) {
     return;
   }
 
