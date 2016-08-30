@@ -740,7 +740,7 @@ if (isVkEnv()) {
 }
 
 VK.startPreroll = function() {
-  VK.preroll.setupPreroll(VK.app_id, {preview: 8});
+  VK.preroll.setupPreroll(VK.app_id);
   admanStat(VK.app_id, VK.user_id);
 }
 
