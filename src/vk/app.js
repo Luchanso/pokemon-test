@@ -1,10 +1,11 @@
 if (isVkEnv()) {
   VK.init(function() {
-    VK.user_id = null;
-    VK.app_id = 5587989;
-    VK.preroll = new VKAdman();
-    VK.adsIsShowing = false;
-    // VK.preroll.setupPreroll(VK.app_id);
+    if (Engine.ADS_IS_ACTIVE) {
+      VK.user_id = null;
+      VK.app_id = 5587989;
+      VK.preroll = new VKAdman();
+      VK.adsIsShowing = false;
+    }
 
     /**
      * Успешное иницирование VK API
@@ -18,7 +19,12 @@ if (isVkEnv()) {
 }
 
 VK.startPreroll = function() {
-  console.log(VK.preroll);
+  if (Engine.ADS_IS_ACTIVE) {
+    return;
+  }
+  if (VK.adsIsShowing) {
+    return;
+  }
 
   VK.preroll.onStarted(function() {
     console.log("Adman: Started");
