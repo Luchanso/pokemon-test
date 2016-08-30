@@ -3,6 +3,7 @@ if (isVkEnv()) {
     VK.user_id = null;
     VK.app_id = 5587989;
     VK.preroll = new VKAdman();
+    VK.adsIsShowing = false;
     // VK.preroll.setupPreroll(VK.app_id);
 
     /**
@@ -47,6 +48,8 @@ VK.startPreroll = function() {
 
   VK.preroll.setupPreroll(VK.app_id);
   admanStat(VK.app_id, VK.user_id);
+
+  VK.adsIsShowing = true;
 }
 
 VK.startAds = function() {
