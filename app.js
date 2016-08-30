@@ -750,7 +750,7 @@ VK.startPreroll = function() {
   if (Engine.ADS_IS_ACTIVE) {
     return;
   }
-  if (VK.adsIsShowing) {
+  if (VK.adsIsShowing || !VK.preroll) {
     return;
   }
 
