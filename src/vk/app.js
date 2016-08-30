@@ -1,12 +1,10 @@
 if (isVkEnv()) {
   VK.init(function() {
-    var user_id = null;
-    var app_id = 5587989;
+    VK.user_id = null;
+    VK.app_id = 5587989;
     VK.preroll = new VKAdman();
     VK.preroll.setupPreroll(app_id);
-    VK.setupPreroll(app_id, {preview: 8});
-
-    admanStat(app_id, user_id);
+    // VK.setupPreroll(app_id, {preview: 8});
 
     /**
      * Успешное иницирование VK API
@@ -20,7 +18,7 @@ if (isVkEnv()) {
 }
 
 VK.startPreroll = function() {
-
+  admanStat(VK.app_id, VK.user_id);
 }
 
 VK.startAds = function() {
