@@ -721,7 +721,7 @@ if (isVkEnv()) {
     VK.app_id = 5587989;
     VK.preroll = new VKAdman();
     VK.preroll.setupPreroll(app_id);
-    VK.setupPreroll(app_id, {preview: 8});
+    VK.setupPreroll(VK.app_id, {preview: 8});
 
     /**
      * Успешное иницирование VK API
