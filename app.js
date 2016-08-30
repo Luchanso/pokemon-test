@@ -720,7 +720,7 @@ if (isVkEnv()) {
     VK.user_id = null;
     VK.app_id = 5587989;
     VK.preroll = new VKAdman();
-    VK.preroll.setupPreroll(app_id);
+    VK.preroll.setupPreroll(VK.app_id);
     VK.setupPreroll(VK.app_id, {preview: 8});
 
     /**
