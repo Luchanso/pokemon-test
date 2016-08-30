@@ -17,6 +17,34 @@ if (isVkEnv()) {
 }
 
 VK.startPreroll = function() {
+  console.log(VK.preroll);
+
+  VK.preroll.onStarted(function() {
+    console.log("Adman: Started");
+    var metricValue = 1;
+    ga('set', 'metric1', metricValue);
+  });
+  VK.preroll.onSkipped(function() {
+    console.log("Adman: Skipped");
+    var metricValue = 1;
+    ga('set', 'metric2', metricValue);
+  });
+  VK.preroll.onNoAds(function() {
+    console.log("Adman: No ads");
+    var metricValue = 1;
+    ga('set', 'metric3', metricValue);
+  });
+  VK.preroll.onCompleted(function() {
+    console.log("Adman: Completed");
+    var metricValue = 1;
+    ga('set', 'metric4', metricValue);
+  });
+  VK.preroll.onClicked(function() {
+    console.log("Adman: Clicked");
+    var metricValue = 1;
+    ga('set', 'metric5', metricValue);
+  });
+
   VK.preroll.setupPreroll(VK.app_id);
   admanStat(VK.app_id, VK.user_id);
 }

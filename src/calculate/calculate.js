@@ -178,10 +178,15 @@ Engine.Calculate.prototype = {
   },
 
   _shareData: function() {
+    var metricValue = 1;
+    ga('set', 'metric7', metricValue);
     VK.publicatePhoto(Engine.rndPokemon);
   },
 
   _repeatGame: function() {
+    var metricValue = 1;
+    ga('set', 'metric6', metricValue);
+
     Engine.rndPokemon = this.game.rnd.between(1, 721);
     this.state.start('Preloader');
   }
