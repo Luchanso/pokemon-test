@@ -125,11 +125,13 @@ Engine.Calculate.prototype = {
   },
 
   _addAds: function() {
-    if (this.game.rnd.pick([-1, 1]) === 1) {
-      VK.startPreroll();
-    } else {
-      VK.startAds();
-    }
+    VK.startPreroll();
+
+    // if (this.game.rnd.pick([-1, 1]) === 1) {
+    //   VK.startPreroll();
+    // } else {
+    //   VK.startAds();
+    // }
   },
 
   _addBtns: function() {
