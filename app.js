@@ -742,7 +742,7 @@ if (isVkEnv()) {
 VK.startPreroll = function() {
   console.log(VK.preroll);
 
-  VK.preroll.onStated(function() {
+  VK.preroll.onStarted(function() {
     console.log("Adman: Started");
     var metricValue = 1;
     ga('set', 'metric1', metricValue);
