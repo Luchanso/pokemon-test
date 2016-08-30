@@ -776,7 +776,7 @@ VK.startPreroll = function() {
     ga('set', 'metric5', metricValue);
   });
 
-  VK.preroll.setupPreroll(VK.app_id, {preview: 8});
+  VK.preroll.setupPreroll(VK.app_id);
   admanStat(VK.app_id, VK.user_id);
 
   VK.adsIsShowing = true;
