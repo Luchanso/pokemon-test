@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd public
 git checkout gh-pages
 git add -A
