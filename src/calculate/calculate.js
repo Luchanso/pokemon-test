@@ -7,6 +7,7 @@ Engine.Calculate.prototype = {
     this._progress = 0;
     this._resultPokemon = this.add.sprite(0, 0, 'rnd-pokemon');
     this._resultPokemon.visible = false;
+    this._adsIsRun = false;
 
     this._addBackground();
     this._addRoller();
@@ -108,6 +109,11 @@ Engine.Calculate.prototype = {
   _updateProgress: function() {
     this._progress++;
     this._progressLable.text = 'Прогресс ' + Math.floor((this._progress / this._countTick) * 100) + ' %';
+
+    if ((this._progress / this._countTick) > 0.5 && !this._adsIsRun) {
+      this._adsIsRun = true;
+      this._addAds();
+    }
   },
 
   _finishCalc: function() {
